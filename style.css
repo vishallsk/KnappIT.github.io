@@ -86,7 +86,7 @@ section{
 }
 .hero-img{
     height:auto;
-    width: 200px;;
+    width: 300px;;
 }
 .hero-text a{
     display: inline-block;
@@ -151,3 +151,86 @@ html, body {
 	padding: 5rem 5rem 5rem 1rem;
     
 } 
+/* Responsive.css */
+
+/* Ensure proper scaling on mobile devices */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Adjust header for smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 5%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navlist {
+        flex-direction: column;
+        background-color: #212121;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .navlist.active {
+        display: flex;
+    }
+
+    .navlist a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+}
+
+/* Adjust hero section for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-bottom: 20px;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .icons {
+        display: none;
+    }
+}
+
+/* Adjust about section for smaller screens */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin-top: 27px;
+    }
+
+    .about .about-text {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .about .about-image img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+}
+
