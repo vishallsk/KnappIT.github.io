@@ -1,4 +1,3 @@
-/* Reset and font settings */
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +7,6 @@
     text-decoration: none;
 }
 
-/* Header styling */
 header {
     position: fixed;
     right: 0;
@@ -22,20 +20,17 @@ header {
     background-image: linear-gradient(90deg, #000000, #212121, #2b2b2b);
 }
 
-/* Logo styling */
 .logo {
     font-size: 30px;
     font-weight: 700;
     color: white;
 }
 
-/* Navigation list styling */
 .navlist {
     display: flex;
-    transition: all 0.3s ease; /* Added transition for smooth opening/closing */
+    transition: all 0.3s ease; 
 }
 
-/* Navigation links styling */
 .navlist a {
     color: white;
     margin-left: 60px;
@@ -45,21 +40,18 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Navigation link hover effect */
 .navlist a:hover {
     border-bottom: 2px solid white;
 }
 
-/* Menu icon styling */
 #menu-icon {
     color: white;
     font-size: 30px;
     z-index: 10001;
     cursor: pointer;
-    display: none; /* Initially hidden */
+    display: none; 
 }
 
-/* Hero section styling */
 .hero {
     height: 100vh;
     width: 100%;
@@ -76,12 +68,10 @@ header {
     padding: 20px;
 }
 
-/* Section padding */
 section {
     padding: 0 19%;
 }
 
-/* Hero text styling */
 .hero-text h5 {
     font-size: 14px;
     font-weight: 400;
@@ -89,7 +79,6 @@ section {
     margin-bottom: 40px;
 }
 
-/* Hero text heading styling */
 .hero-text h1 {
     font-family: "permanent marker", cursive;
     font-size: 90px;
@@ -98,7 +87,6 @@ section {
     margin: 0 0 45px;
 }
 
-/* Additional hero text styling */
 .hero-text h4 {
     font-size: 20px;
     font-weight: 600;
@@ -112,13 +100,11 @@ section {
     margin-bottom: 40px;
 }
 
-/* Hero image styling */
 .hero-img {
     height: auto;
     width: 300px;
 }
 
-/* Hero text link styling */
 .hero-text a {
     display: inline-block;
     color: white;
@@ -133,21 +119,18 @@ section {
     transition: all 0.3s ease;
 }
 
-/* Hero text link hover effect */
 .hero-text a:hover {
     background: transparent;
     border: 1px solid white;
     transform: translate(-2px);
 }
 
-/* Secondary hero text link styling */
 .hero-text a.ctaa {
     background: transparent;
     border: 1px solid white;
     margin-left: 20px;
 }
 
-/* Social media icons styling */
 .icons {
     position: absolute;
     top: 50%;
@@ -163,14 +146,12 @@ section {
     color: white;
 }
 
-/* Full height and width for body */
 html, body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
 }
 
-/* About section styling */
 .about {
     display: flex;
     align-items: center;
@@ -192,7 +173,6 @@ html, body {
     padding: 5rem 5rem 5rem 1rem;
 }
 
-/* Responsive styling */
 html {
     font-size: 100%;
 }
@@ -201,7 +181,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Adjust header for smaller screens */
 @media (max-width: 768px) {
     header {
         padding: 10px 5%;
@@ -212,13 +191,13 @@ body {
     }
 
     #menu-icon {
-        display: block; /* Show menu icon on small screens */
+        display: block; 
     }
 
     .navlist {
         position: absolute;
         top: 100%;
-        right: -200px; /* Initially hide off-screen */
+        right: -200px; 
         width: 200px;
         height: 40vh;
         background: #2b2b2b;
@@ -237,11 +216,10 @@ body {
     }
 
     .navlist.open {
-        right: 0; /* Show when toggled */
+        right: 0; 
     }
 }
 
-/* Adjust hero section for smaller screens */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -278,7 +256,6 @@ body {
     }
 }
 
-/* Adjust about section for smaller screens */
 @media (max-width: 768px) {
     .about {
         flex-direction: column;
@@ -298,3 +275,4 @@ body {
         padding: 0;
     }
 }
+
